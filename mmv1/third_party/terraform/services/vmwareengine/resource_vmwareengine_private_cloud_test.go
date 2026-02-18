@@ -153,8 +153,8 @@ func TestAccVmwareenginePrivateCloud_vmwareEnginePrivateCloudUpdate(t *testing.T
 func testVmwareenginePrivateCloudCreateConfig(context map[string]interface{}) string {
 	return testVmwareenginePrivateCloudConfig(context, "sample description", "TIME_LIMITED", 1, 0) +
 		testVmwareengineVcenterNSXCredentialsConfig(context) +
-		testVmwareengineUpgradesConfig(context)
-	testVmwareengineAnnouncementsConfig(context)
+		testVmwareengineUpgradesConfig(context) +
+		testVmwareengineAnnouncementsConfig(context)
 }
 
 func testVmwareenginePrivateCloudUpdateNodeConfig(context map[string]interface{}) string {
