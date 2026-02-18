@@ -154,7 +154,7 @@ func testVmwareenginePrivateCloudCreateConfig(context map[string]interface{}) st
 	return testVmwareenginePrivateCloudConfig(context, "sample description", "TIME_LIMITED", 1, 0) +
 		testVmwareengineVcenterNSXCredentialsConfig(context) +
 		testVmwareengineUpgradesConfig(context)
-    testVmwareengineAnnouncementsConfig(context)
+	testVmwareengineAnnouncementsConfig(context)
 }
 
 func testVmwareenginePrivateCloudUpdateNodeConfig(context map[string]interface{}) string {
