@@ -347,7 +347,7 @@ func flattenVmwareengineUpgrades(v interface{}, d *schema.ResourceData, config *
 			"state":                      rawMap["state"],
 			"type":                       rawMap["type"],
 			"description":                rawMap["description"],
-			"estimated_duration_seconds": rawMap["estimated_duration_seconds"],
+			"estimated_duration": rawMap["estimatedDuration"],
 			"schedule":                   flattenVmwareengineUpgradesSchedule(rawMap["schedule"], d, config),
 			"component_upgrades":         flattenVmwareengineUpgradesComponentUpgrades(rawMap["componentUpgrades"], d, config),
 			"start_version":              rawMap["startVersion"],
