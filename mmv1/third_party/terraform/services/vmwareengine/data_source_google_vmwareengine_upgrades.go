@@ -118,8 +118,8 @@ func dataSourceVmwareengineUpgrade() *schema.Resource {
 				Computed:    true,
 				Description: "Additional information about the private cloud upgrade.",
 			},
-			"estimated_duration_seconds": {
-				Type:        schema.TypeInt,
+			"estimated_duration": {
+				Type:        schema.TypeString,
 				Computed:    true,
 				Description: "The estimated total duration of the upgrade in seconds.",
 			},
