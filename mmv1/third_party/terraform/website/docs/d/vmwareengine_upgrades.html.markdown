@@ -35,7 +35,7 @@ The `upgrades` block supports:
 * `state` - The current state of the upgrade. Possible values include: `SCHEDULED`, `ONGOING`, `SUCCEEDED`, `PAUSED`, `FAILED`, `CANCELLING`, `CANCELLED`, `RESCHEDULING`.
 * `type` - The type of upgrade. Possible values include: `VSPHERE_UPGRADE`, `VSPHERE_PATCH`, `WORKAROUND`, `FIRMWARE_UPGRADE`, `SWITCH_UPGRADE`, `OTHER`, `INFRASTRUCTURE_UPGRADE`.
 * `description` - Additional information about the private cloud upgrade.
-* `estimated_duration_seconds` - The estimated total duration of the upgrade in seconds.
+* `estimated_duration` - The estimated total duration of the upgrade in seconds. This information can be used to plan or schedule upgrades to minimize disruptions. Please note that the estimated duration is only an estimate. The actual upgrade duration may vary. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 * `schedule` - Schedule details for the upgrade.
 * `component_upgrades` - The list of component upgrades.
 * `start_version` - The start version of the private cloud for this upgrade.
