@@ -342,16 +342,16 @@ func flattenVmwareengineUpgrades(v interface{}, d *schema.ResourceData, config *
 	for _, raw := range l {
 		rawMap := raw.(map[string]interface{})
 		transformed = append(transformed, map[string]interface{}{
-			"name":                       rawMap["name"],
-			"end_time":                   rawMap["endTime"],
-			"state":                      rawMap["state"],
-			"type":                       rawMap["type"],
-			"description":                rawMap["description"],
+			"name":               rawMap["name"],
+			"end_time":           rawMap["endTime"],
+			"state":              rawMap["state"],
+			"type":               rawMap["type"],
+			"description":        rawMap["description"],
 			"estimated_duration": rawMap["estimatedDuration"],
-			"schedule":                   flattenVmwareengineUpgradesSchedule(rawMap["schedule"], d, config),
-			"component_upgrades":         flattenVmwareengineUpgradesComponentUpgrades(rawMap["componentUpgrades"], d, config),
-			"start_version":              rawMap["startVersion"],
-			"target_version":             rawMap["targetVersion"],
+			"schedule":           flattenVmwareengineUpgradesSchedule(rawMap["schedule"], d, config),
+			"component_upgrades": flattenVmwareengineUpgradesComponentUpgrades(rawMap["componentUpgrades"], d, config),
+			"start_version":      rawMap["startVersion"],
+			"target_version":     rawMap["targetVersion"],
 		})
 	}
 
